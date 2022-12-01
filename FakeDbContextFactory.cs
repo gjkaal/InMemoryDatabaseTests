@@ -4,6 +4,9 @@ using Microsoft.Extensions.Logging;
 
 namespace FakeDbTestModel;
 
+/// <summary>
+/// This class is used to crate a fake db using an in memory database with Sqlite.
+/// </summary>
 public class FakeDbContextFactory : IDataContextFactory, IDisposable
 {
     private readonly ILogger<FakeDbContextFactory> logger;
